@@ -24,7 +24,7 @@ def control_args(args):
     if not args.search_sort in ['price_desc', 'price_asc', 'quantity_desc', 'quantity_desc', 'name_asc', 'name_desc']:
         raise RuntimeError('typed bad sort type.\nAvalible types is:\n[\'price_desc\', \'price_asc\', \'quantity_desc\', \'quantity_desc\', \'name_asc\', \'name_desc\']')
 
-    if nwot args.output_format in ['json', 'yaml', None]:
+    if not args.output_format in ['json', 'yaml', None]:
         raise RuntimeError('typed bad output format.\nAvalible formats is:\n[\'json\', \'yaml\'] or don\'t use this arg')
 
 #aria-invalid="false", autocomplete="off", class_="Textinput-Control"
